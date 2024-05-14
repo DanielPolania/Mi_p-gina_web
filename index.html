@@ -1,34 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio de Daniel Polania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-image: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-position: center;
+            color: white; /* Color de texto para que sea legible sobre la imagen de fondo */
+            padding: 40px; /* Espaciado interno para mejorar la legibilidad */
+        }
+        h1 {
+            color: inherit; /* Heredar el color de texto de su elemento padre */
+            margin-bottom: 10px; /* Agregar un poco de espacio entre el título y el texto */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px; /* Añadir un espacio interno para mejorar la legibilidad */
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>Daniel Polania</h1>
+        <nav>
+            <ul>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
-        <section>
-            <h2>Acerca de</h2>
-            <p>Breve descripción de la página...</p>
+        <section id="biografia" style="background-color: #eaf2ef;"> <!-- Cambiar el color de fondo de esta sección -->
+            <h2>Biografía</h2>
+            <p>Hola, soy Daniel Polania. Programador web con experiencia en análisis de datos. Apasionado por la tecnología y la estrategia digital.</p>
         </section>
-        <section>
+        <section id="proyectos" style="background-color: #f6e7ea;"> <!-- Cambiar el color de fondo de esta sección -->
+            <h2>Proyectos</h2>
+            <p>Aquí puedes encontrar algunos de mis proyectos más recientes:</p>
+            <ul>
+                <li>Proyecto 1</li>
+                <li>Proyecto 2</li>
+                <li>Proyecto 3</li>
+            </ul>
+        </section>
+        <section id="habilidades" style="background-color: #eae6f2;"> <!-- Cambiar el color de fondo de esta sección -->
+            <h2>Habilidades</h2>
+            <p>Mis habilidades incluyen:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Análisis de datos</li>
+                <li>... y más</li>
+            </ul>
+        </section>
+        <section id="contacto" style="background-color: #f2f2f2;"> <!-- Cambiar el color de fondo de esta sección -->
             <h2>Contacto</h2>
-            <p>Información de contacto...</p>
+            <p>Puedes contactarme a través de:</p>
+            <ul>
+                <li>Email: correo@example.com</li>
+                <li>Teléfono: 123-456-789</li>
+                <li>Redes sociales: [Enlaces a tus perfiles sociales]</li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>Derechos de autor © 2024 Mi Página Web</p>
+        <p>&copy; 2024 Daniel Polania - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
